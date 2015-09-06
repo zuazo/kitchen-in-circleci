@@ -227,6 +227,29 @@ This will allow us to configure the integration tests to run in parallel in the 
 
 For this to work, you need to go to **Project Settings -> Tweaks -> Adjust Parallelism** in the CircleCI dashboard and set the paralellism to the number of tests (`2` in our case: `ubuntu` and `centos`).
 
+You can use more complex regular expressions for the tests such as:
+
+```yaml
+machine:
+-- [...]
+  environment:
+    TESTS: (centos-6|debian-[67]) (debian-8|oraclelinux-6) ubuntu-1[24]04 (ubuntu-1504|scientific-6)
+-- [...]
+```
+
+The example above will run `4` tests in parallel:
+
+1. CentOS `6`, Debian `6` and Debian `7`.
+2. Debian `8` and Oracle Linux `6`.
+3. Ubuntu `12.04` and Ubunut `14.04`.
+4. Ubuntu `15.04` and Scientific Linux `6`.
+
+Look [real-world examples below](https://github.com/zuazo/kitchen-in-circleci#real-world-examples) for more complete examples.
+
+## Real-world Examples
+
+* [`ssl_certificate`](https://github.com/zuazo/ssl_certificate-cookbook) cookbook ([*circle.yml*](https://github.com/zuazo/ssl_certificate-cookbook/blob/master/circle.yml), [*.kitchen.docker.yml*](https://github.com/zuazo/ssl_certificate-cookbook/blob/master/.kitchen.docker.yml), [*Rakefile*](https://github.com/zuazo/ssl_certificate-cookbook/blob/master/Rakefile)): Runs kitchen tests against many suites and platforms (~40). Includes a Serverspec and bats tests.
+
 ## Known Issues
 
 ### Official CentOS 7 and Fedora Images
