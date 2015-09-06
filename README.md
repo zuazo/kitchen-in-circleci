@@ -223,7 +223,7 @@ test:
       timeout: 900
 ```
 
-This will allow us to configure the integration tests to run in parallel in the `TEST` environment variable.
+This will allow us to configure the integration tests to run in parallel in the `TESTS` environment variable.
 
 For this to work, you need to go to **Project Settings -> Tweaks -> Adjust Parallelism** in the CircleCI dashboard and set the paralellism to the number of tests (`2` in our case: `ubuntu` and `centos`).
 
