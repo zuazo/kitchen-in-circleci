@@ -241,7 +241,7 @@ The example above will run `4` tests in parallel:
 
 1. CentOS `6`, Debian `6` and Debian `7`.
 2. Debian `8` and Oracle Linux `6`.
-3. Ubuntu `12.04` and Ubunut `14.04`.
+3. Ubuntu `12.04` and Ubuntu `14.04`.
 4. Ubuntu `15.04` and Scientific Linux `6`.
 
 Look [real-world examples below](https://github.com/zuazo/kitchen-in-circleci#real-world-examples) for more complete examples.
