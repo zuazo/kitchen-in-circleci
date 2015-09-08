@@ -219,7 +219,7 @@ dependencies:
 test:
   override:
   - TESTS=(${TESTS// / }) ; bundle exec rake integration:docker[${TESTS[$CIRCLE_NODE_INDEX]}]:
-      parallel: true
+      parallel: true # Project Settings -> Tweaks -> Adjust Parallelism -> 2
       timeout: 900
 ```
 
