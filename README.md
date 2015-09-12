@@ -36,7 +36,7 @@ This example cookbook only installs nginx. It also includes some [Serverspec](ht
 ## Related Projects
 
 * [kitchen-in-travis](https://github.com/zuazo/kitchen-in-travis): Runs test-kitchen inside [Travis CI](https://travis-ci.org/) using [User Mode Linux](https://github.com/jpetazzo/sekexe), without using the new native Docker service. The build times are longer but more customizable than in `kitchen-in-travis-native`. Recommended if you want to run tests against many instances. For example, to test multiple instances for each build.
-* [kitchen-in-travis-native](https://github.com/zuazo/kitchen-in-travis-native): Run test-kitchen inside [Travis CI](https://travis-ci.org/) using the [native Docker service](http://blog.travis-ci.com/2015-08-19-using-docker-on-travis-ci/) and kitchen-docker. The builds are faster (~2 mins to start), but a little less customizable than in `kitchen-in-travis`.
+* [kitchen-in-travis-native](https://github.com/zuazo/kitchen-in-travis-native): Runs test-kitchen inside [Travis CI](https://travis-ci.org/) using the [native Docker service](http://blog.travis-ci.com/2015-08-19-using-docker-on-travis-ci/) and kitchen-docker. The builds are faster (~2 mins to start), but a little less customizable than in `kitchen-in-travis`.
 
 ## Install the Requirements
 
