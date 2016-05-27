@@ -10,7 +10,7 @@ machine:
   services:
   - docker
   ruby:
-    version: 2.2.2
+    version: 2.3.0
 
 dependencies:
   override:
@@ -112,7 +112,7 @@ machine:
   services:
   - docker
   ruby:
-    version: 2.2.2
+    version: 2.3.0
 
 dependencies:
   override:
@@ -199,7 +199,7 @@ machine:
   services:
   - docker
   ruby:
-    version: 2.2.2
+    version: 2.3.0
   environment:
     TESTS: ubuntu centos
 
